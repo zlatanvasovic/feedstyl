@@ -11,3 +11,5 @@ If you interested in testing Python RSS script, contact me on **zdroid@zdroidblo
 You need feedparser for normal work of this bot.
 
 <b>feedparser</b> → http://code.google.com/p/feedparser/
+
+For running see wiki pages.
