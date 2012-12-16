@@ -1,6 +1,6 @@
 # What is PyRSS?
 
-**PyRSS** (**PythonRSS**) is script for parsing RSS feeds and `python terminal` run.
+**PyRSS** (<b>PythonRSS</b>) is script for parsing RSS feeds and `python terminal` run.
 
 # How to help me with testing?
 
