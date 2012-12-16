@@ -1,14 +1,14 @@
-# What is Python RSS script?
+# What is PyRSS?
 
-**Python RSS script** is script for parsing RSS feeds and `python terminal` run.
+**PyRSS** (**PythonRSS**) is script for parsing RSS feeds and `python terminal` run.
 
 # How to help me with testing?
 
-If you interested in testing Python RSS script, contact me on **zdroid@zdroidblog.info**.
+If you interested in testing PyRSS, contact me on **zdroid@zdroidblog.info**.
 
 # Notes
 
-You need feedparser for normal work of this bot.
+You need feedparser for normal work of this script.
 
 <b>feedparser</b> → http://code.google.com/p/feedparser/
 
