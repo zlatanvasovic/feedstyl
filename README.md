@@ -12,4 +12,4 @@ You need feedparser for normal work of this script.
 
 <b>feedparser</b> → http://code.google.com/p/feedparser/
 
-For running see wiki pages.
+For running see [wiki pages] (https://github.com/ZDroid/PyRSS/wiki).
