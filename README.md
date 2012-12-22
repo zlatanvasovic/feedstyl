@@ -8,7 +8,7 @@ If you interested in testing PyRSS, contact me on **zdroid@zdroidblog.info**.
 
 # Notes
 
-You need feedparser for normal work of this script.
+You need **`feedparser` python module** for normal work of this script.
 
 <b>feedparser</b> → http://code.google.com/p/feedparser/
 
