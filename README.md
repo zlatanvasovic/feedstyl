@@ -12,7 +12,17 @@ You need **`feedparser` python module** for normal work of this script.
 
 <b>feedparser</b> → http://code.google.com/p/feedparser/
 
-For running see [wiki pages] (https://github.com/ZDroid/PyRSS/wiki).
+# Cloning
+
+```
+$ git clone git://github.com/ZDroid/PyRSS
+```
+
+# Simple run
+
+```
+$ python /path/to/PyRSS/rss.py
+```
 
 # Example output
 
