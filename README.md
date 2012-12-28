@@ -2,6 +2,8 @@
 
 **PyRSS** (<b>PythonRSS</b>) is script for parsing RSS feeds and `python terminal` run.
 
+**PyRSS site** is created with github pages. PyRSS site (`gh-pages` branch) → http://zdroid.github.com/PyRSS/.
+
 # How to help me with testing?
 
 If you interested in testing PyRSS, contact me on **zdroid@zdroidblog.info**.
