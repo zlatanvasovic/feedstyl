@@ -23,8 +23,9 @@ $ git clone git://github.com/ZDroid/PyRSS
 # Simple run
 
 ```
-$ python /path/to/PyRSS/rss.py
+$ python /path/to/PyRSS/rss.py http://link.to.rss-feed.com/rss-feed
 ```
+Replace `http://link.to.rss.feed/rss-feed` with your wanted (RSS) feed.
 
 # Example output
 
