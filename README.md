@@ -2,6 +2,8 @@
 
 **PyRSS** (<b>PythonRSS</b>) is script for parsing RSS feeds and `python terminal` run.
 
+It works with RSS, Atom and XML feeds.
+
 **PyRSS site** is created with github pages. PyRSS site (`gh-pages` branch) → http://zdroid.github.com/PyRSS/.
 
 # How to help me with testing?
@@ -25,7 +27,7 @@ $ git clone git://github.com/ZDroid/PyRSS
 ```shell
 $ python /path/to/PyRSS/rss.py http://link.to.rss-feed.com/rss-feed
 ```
-Replace `http://link.to.rss.feed/rss-feed` with your wanted (RSS) feed.
+Replace `http://link.to.rss.feed/rss-feed` with your wanted (RSS/Atom/XML) feed.
 
 # Example output
 ```shell
