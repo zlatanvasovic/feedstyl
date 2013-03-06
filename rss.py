@@ -3,7 +3,7 @@
 # Import libraries.
 import sys
 import feedparser
-#List of uples (label, property-tag, truncation)
+# List of uples (label, property-tag, truncation)
 COMMON_CHANNEL_PROPERTIES = [
     ('Channel title:', 'title', None),
     ('Channel description:', 'description', 100),
@@ -22,7 +22,7 @@ def feedinfo(url, output=sys.stdout):
     """
     feed_data = feedparser.parse(url)
     channel, items = feed_data.feed, feed_data.entries
-    #Display core feed data
+    # Display core feed data
     for label, prop, trunc in COMMON_CHANNEL_PROPERTIES:
         value = channel[prop]
         if trunc:
