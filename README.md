@@ -1,30 +1,25 @@
-# What is PyRSS?
+PyRSS
+=====
 
-**PyRSS** (<b>PythonRSS</b>) is Python script for parsing RSS feeds.
+Intro
+-----
 
-Its name isn't factor for usage, it works with RSS, Atom and XML feeds.
+**PyRSS** (<b>Python RSS</b>) is Python script for parsing RSS feeds.
 
-[**PyRSS site**] (https://zdroid.github.com/PyRSS) is generated with GitHub pages.
+You just need [feedparser](http://code.google.com/p/feedparser/) installed and all will work great.
 
-# How to contribute?
+Contributing
+------------
 
 For all suggestions and problems contact me on **zdroid@zdroidblog.info**.
 
-# Notes
-
-You need `feedparser` python module for normal work of this script.
-
-**feedparser** → http://code.google.com/p/feedparser/
-
-# Cloning repo
+Start
+-----
 
 ```bash
 $ git clone git@github.com:ZDroid/PyRSS
+$ cd PyRSS
+$ chmod +x rss.py 
+$ ./rss.py http://r.ss/rss
 ```
-
-# Simple run
-
-```bash
-$ python /path/to/PyRSS/rss.py http://link.to.rss-feed.com/rss-feed
-```
-Replace `http://link.to.rss.feed/rss-feed` with your wanted (RSS/Atom/XML) feed.
+Replace `http://r.ss/rss` with your wanted feed.
