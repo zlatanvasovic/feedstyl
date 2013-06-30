@@ -1,27 +1,32 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
+
 # Import libraries.
 import sys
 import feedparser
+
 # List of uples (label, property-tag, truncation)
 COMMON_CHANNEL_PROPERTIES = [
     ('Channel title:', 'title', None),
     ('Channel description:', 'description', 100),
     ('Channel URL:', 'link', None),
 ]
+
 COMMON_ITEM_PROPERTIES = [
     ('Item title:', 'title', None),
     ('Item description:', 'description', 100),
     ('Item URL:', 'link', None),
 ]
+
 INDENT = u' '*4
 def feedinfo(url, output=sys.stdout):
     """
-    Read an RSS or Atom feed from the given URL and output a feed
+    Read a RSS or Atom feed from the given URL and output a feed
     report with all the key data
     """
     feed_data = feedparser.parse(url)
     channel, items = feed_data.feed, feed_data.entries
+
     # Display core feed data
     for label, prop, trunc in COMMON_CHANNEL_PROPERTIES:
         value = channel[prop]
