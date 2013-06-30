@@ -8,7 +8,7 @@ You just need [feedparser](http://code.google.com/p/feedparser/) installed and a
 Contributing
 ------------
 
-For all suggestions and problems contact me on **zdroid [at] zdroidblog [dot] info**.
+For all suggestions and problems contact me on **zdroid at zdroidblog dot info**.
 
 Start
 -----
