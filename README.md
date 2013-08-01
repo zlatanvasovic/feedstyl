@@ -2,6 +2,8 @@
 
 **parser.py** is Python script for parsing RSS and Atom feeds. Based on [one of IBM developerWorks](http://www.ibm.com/developerworks/xml/library/x-tipufp/).
 
+Licensed under the terms of the MIT license.
+
 ## Usage
 
 Run:
