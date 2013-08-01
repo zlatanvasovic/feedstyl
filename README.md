@@ -1,28 +1,22 @@
-parser.py
-=========
+# parser.py
 
-**parser.py** is Python script for parsing RSS and Atom feeds.
+**parser.py** is Python script for parsing RSS and Atom feeds. Based on [one of IBM developerWorks](http://www.ibm.com/developerworks/xml/library/x-tipufp/).
 
-You just need [feedparser](http://code.google.com/p/feedparser/) installed and all will work well.
+## Usage
 
-Contributing
-------------
-
-For all suggestions and problems contact me on **zdroid at zdroidblog dot info**.
-
-Start
------
-
+Run:
 ```bash
-$ git clone git@github.com:ZDroid/parser.py
-$ cd parser.py
-$ chmod +x parser.py
-$ ./parser.py http://site/rss
+$ ./parser.py $feed
 ```
-Replace `http://site/rss` with your wanted feed.
 
-Author
-------
+Replace `$feed` with your wanted feed.
+
+## Notes
+
+* Requires [feedparser](http://code.google.com/p/feedparser/) module.
+* Some Atom feeds cannot be parsed (feedparser bug).
+
+## Author
 
 **Zlatan Vasović**
 * https://twitter.com/ZXeDroid
