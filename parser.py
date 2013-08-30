@@ -46,12 +46,12 @@ def feedinfo(url, output=sys.stdout):
   print >> output, "\nFeed items:\n"
   for item in items:
     for label, prop, trunc in COMMON_ITEM_PROPERTIES:
-      print >> output, INDENT, u"---"
+      print >> output, INDENT, u"----"
       value = item[prop]
       if trunc:
         value = value[:trunc] + u"..."
       print >> output, INDENT, label, value
-      print >> output, INDENT, u"---\n"
+      print >> output, INDENT, u"----\n"
   return
 
 # Parse feed
