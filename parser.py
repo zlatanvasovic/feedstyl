@@ -12,19 +12,19 @@ import feedparser
 # ------
 
 # List of uples (label, property-tag, truncation)
-COMMON_CHANNEL_PROPERTIES = [
-  ("Channel title:", "title", None),
+common_channel_properties = [
+  ("\nChannel title:", "title", None),
   ("Channel description:", "description", 100),
   ("Channel URL:", "link", None),
 ]
 
-COMMON_ITEM_PROPERTIES = [
+common_item_properties = [
   ("Item title:", "title", None),
   ("Item description:", "description", 50),
   ("Item URL:", "link", None),
 ]
 
-INDENT = u" "*2
+indent = u" "*2
 
 # Data
 # ----
@@ -37,7 +37,7 @@ def feedinfo(url, output=sys.stdout):
   items = feed_data.entries
 
   # Display channel data
-  for label, prop, trunc in COMMON_CHANNEL_PROPERTIES:
+  for label, prop, trunc in common_channel_properties:
     value = channel[prop]
     if trunc:
       value = value[:trunc] + u"..."
@@ -46,13 +46,13 @@ def feedinfo(url, output=sys.stdout):
   # Display item data
   print >> output, "\nFeed items:\n"
   for item in items:
-    for label, prop, trunc in COMMON_ITEM_PROPERTIES:
-      print >> output, INDENT, u"----"
+    for label, prop, trunc in common_item_properties:
+      print >> output, indent, u"----"
       value = item[prop]
       if trunc:
         value = value[:trunc] + u"..."
-      print >> output, INDENT, label, value
-      print >> output, INDENT, u"----\n"
+      print >> output, indent, label, value
+      print >> output, indent, u"----\n"
   return
 
 # Parse feed
