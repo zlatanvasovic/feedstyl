@@ -33,7 +33,8 @@ def feedinfo(url, output=sys.stdout):
   # Read an RSS or Atom feed from the given URL and output a feed report with
   # all the key data
   feed_data = feedparser.parse(url)
-  channel, items = feed_data.feed, feed_data.entries
+  channel = feed_data.feed
+  items = feed_data.entries
 
   # Display channel data
   for label, prop, trunc in COMMON_CHANNEL_PROPERTIES:
