@@ -29,7 +29,7 @@ indent = u" "*2
 # Data
 # ----
 
-def feedinfo(url, output=sys.stdout):
+def feedinfo(url, output = sys.stdout):
   # Read an RSS or Atom feed from the given URL and output a feed report with
   # all the key data
   feed_data = feedparser.parse(url)
