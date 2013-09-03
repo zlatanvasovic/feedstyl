@@ -16,7 +16,7 @@ Replace `$feed` with your wanted feed.
 ## Notes
 
 * Requires [feedparser](http://code.google.com/p/feedparser/) module.
-* Some Atom feeds cannot be parsed (feedparser bug).
+* Some Atom feeds can't be parsed (feedparser bug).
 
 ## Author
 
