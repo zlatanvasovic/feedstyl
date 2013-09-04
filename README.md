@@ -1,22 +1,16 @@
 # parser.py
 
-**parser.py** is Python script for parsing RSS and Atom feeds. Based on [one of IBM developerWorks](http://www.ibm.com/developerworks/xml/library/x-tipufp/).
+**parser.py** is Python script for parsing RSS feeds. Requires
+[feedparser](http://code.google.com/p/feedparser/) and terminal with bold
+formatting support.
 
 Licensed under the terms of MIT license.
 
 ## Usage
 
-Run:
-```bash
-$ ./parser.py $feed
-```
+Run: `./parser.py $feed`
 
 Replace `$feed` with your wanted feed.
-
-## Notes
-
-* Requires [feedparser](http://code.google.com/p/feedparser/) module.
-* Some Atom feeds can't be parsed (feedparser bug).
 
 ## Author
 
