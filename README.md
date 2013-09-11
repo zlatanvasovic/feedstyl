@@ -1,16 +1,13 @@
 # parser.py
 
-**parser.py** is Python script for parsing RSS feeds. Requires
-[feedparser](http://code.google.com/p/feedparser/) and terminal with bold
-formatting support.
+**parser.py** is Python script for parsing RSS feeds. Uses
+[feedparser](http://code.google.com/p/feedparser/).
 
 Licensed under the terms of MIT license.
 
 ## Usage
 
-Run: `./parser.py $feed`
-
-Replace `$feed` with your wanted feed.
+Run: `$ ./parser.py URL`
 
 ## Author
 

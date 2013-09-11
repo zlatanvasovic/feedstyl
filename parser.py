@@ -27,9 +27,6 @@ item_properties = [
   ("\033[1mItem URL:\033[0m", "link", None),
 ]
 
-# Indent for entry items
-indent = " "
-
 # Data
 # ----
 
@@ -48,7 +45,7 @@ def feedparse():
       value = item[prop]
       if trunc:
         value = value[:trunc] + "..."
-      print >> sys.stdout, indent, label, value
+      print >> sys.stdout, " ", label, value
     print ""
   return
 
