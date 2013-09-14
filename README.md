@@ -7,7 +7,9 @@ Licensed under the terms of MIT license.
 
 ## Usage
 
-Run: `$ ./parser.py URL`
+```sh
+$ ./parser.py URL
+```
 
 ## Author
 
