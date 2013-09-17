@@ -27,10 +27,10 @@ item_properties = [
   ("\033[1mItem URL:\033[0m", "link", None),
 ]
 
-# Data
-# ----
+# Parse feed
+# ----------
 
-def feedparse():
+if __name__ == "__main__":
   # Display feed data
   for label, prop, trunc in feed_properties:
     value = data.feed[prop]
@@ -47,10 +47,3 @@ def feedparse():
         value = value[:trunc] + "..."
       print >> sys.stdout, " ", label, value
     print ""
-  return
-
-# Parse feed
-# ----------
-
-if __name__ == "__main__":
-  feedparse()

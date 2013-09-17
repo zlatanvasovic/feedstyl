@@ -7,12 +7,13 @@ Licensed under the terms of MIT license.
 
 ## Usage
 
-```sh
+```bash
 $ ./parser.py URL
 ```
 
 ## Author
 
 **Zlatan Vasović**
+
 * https://twitter.com/zdr0id
 * https://github.com/ZDroid
