@@ -8,10 +8,10 @@
 import sys
 import feedparser
 
-# Set up
-# ------
+# Set up properties
+# -----------------
 
-# List of uples (label, property-tag, truncation)
+# List of uples (label, property tag, truncation)
 feed_properties = [
   ("\n\033[1mFeed title:\033[0m", "title", None),
   ("\033[1mFeed description:\033[0m", "description", 57),
@@ -28,14 +28,14 @@ item_properties = [
 # ----------
 
 if __name__ == "__main__":
-  # Display feed data
+  # Display core feed data
   for label, prop, trunc in feed_properties:
     value = feedparser.parse(sys.argv[1]).feed[prop]
     if trunc:
       value = value[:trunc] + "..."
     print >> sys.stdout, label, value
 
-  # Display item data
+  # Display core item data
   print >> sys.stdout, "\n\033[1mFeed items:\033[0m\n"
   for item in feedparser.parse(sys.argv[1]).entries:
     for label, prop, trunc in item_properties:
