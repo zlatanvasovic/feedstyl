@@ -8,10 +8,9 @@
 import sys
 import feedparser
 
-# Set up properties
-# -----------------
-
 # List of uples (label, property tag, truncation)
+# -----------------------------------------------
+
 feed_properties = [
   ("\n\033[1mFeed title:\033[0m", "title", None),
   ("\033[1mFeed description:\033[0m", "description", 57),
