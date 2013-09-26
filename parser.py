@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 #
-# Python feed parser
+# Python feedparsing script
 #
 
 import sys
