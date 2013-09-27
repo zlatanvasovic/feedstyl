@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 
 #
-# Python feedparsing script
+# Python script for displaying pretty RSS feeds
 #
 
 import sys
