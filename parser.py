@@ -13,7 +13,7 @@ import feedparser
 
 feed_properties = [
   ("\n\033[1mFeed title:\033[0m", "title", None),
-  ("\033[1mFeed description:\033[0m", "description", 57),
+  ("\033[1mFeed description:\033[0m", "description", 59),
   ("\033[1mFeed URL:\033[0m", "link", None),
 ]
 
