@@ -8,6 +8,17 @@
 import sys
 import feedparser
 
+usage = """You have to give me a feed url, like this:
+        ./parser.py "http://rss.slashdot.org/Slashdot/slashdot" """
+
+try:
+    feed_url    = sys.argv[1]
+except:
+    print usage
+    sys.exit(-1)
+
+feed_object = feedparser.parse(feed_url)
+
 # List of uples (label, property tag, truncation)
 # -----------------------------------------------
 
@@ -28,14 +39,14 @@ item_properties = [
 
 # Display core feed properties
 for label, prop, trunc in feed_properties:
-  value = feedparser.parse(sys.argv[1]).feed[prop]
+  value = feed_object.feed[prop]
   if trunc is not None and len(value) >= trunc:
     value = value[:trunc] + "..."
   print >> sys.stdout, label, value
 
 # Display core item properties
 print >> sys.stdout, "\n\033[1mFeed items:\033[0m\n"
-for item in feedparser.parse(sys.argv[1]).entries:
+for item in feed_object.entries:
   for label, prop, trunc in item_properties:
     value = item[prop]
     if trunc:
