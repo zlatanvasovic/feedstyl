@@ -26,20 +26,19 @@ item_properties = [
 # Parse feed
 # ----------
 
-if __name__ == "__main__":
-  # Display core feed properties
-  for label, prop, trunc in feed_properties:
-    value = feedparser.parse(sys.argv[1]).feed[prop]
+# Display core feed properties
+for label, prop, trunc in feed_properties:
+  value = feedparser.parse(sys.argv[1]).feed[prop]
+  if trunc:
+    value = value[:trunc] + "..."
+  print >> sys.stdout, label, value
+
+# Display core item properties
+print >> sys.stdout, "\n\033[1mFeed items:\033[0m\n"
+for item in feedparser.parse(sys.argv[1]).entries:
+  for label, prop, trunc in item_properties:
+    value = item[prop]
     if trunc:
       value = value[:trunc] + "..."
-    print >> sys.stdout, label, value
-
-  # Display core item properties
-  print >> sys.stdout, "\n\033[1mFeed items:\033[0m\n"
-  for item in feedparser.parse(sys.argv[1]).entries:
-    for label, prop, trunc in item_properties:
-      value = item[prop]
-      if trunc:
-        value = value[:trunc] + "..."
-      print >> sys.stdout, " ", label, value
-    print ""
+    print >> sys.stdout, " ", label, value
+  print ""
