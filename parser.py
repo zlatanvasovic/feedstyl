@@ -29,7 +29,7 @@ item_properties = [
 # Display core feed properties
 for label, prop, trunc in feed_properties:
   value = feedparser.parse(sys.argv[1]).feed[prop]
-  if trunc:
+  if trunc is not None and len(value) >= trunc:
     value = value[:trunc] + "..."
   print >> sys.stdout, label, value
 
