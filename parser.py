@@ -38,7 +38,7 @@ print >> sys.stdout, "\n\033[1mFeed items:\033[0m\n"
 for item in feedparser.parse(sys.argv[1]).entries:
   for label, prop, trunc in item_properties:
     value = item[prop]
-    if trunc:
+    if trunc is not None and len(value) >= trunc:
       value = value[:trunc] + "..."
     print >> sys.stdout, " ", label, value
   print ""
