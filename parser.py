@@ -23,8 +23,8 @@ item_properties = [
   ("\033[1mItem URL:\033[0m", "link", None),
 ]
 
-# Parse feed
-# ----------
+# Display feed
+# ------------
 
 # Display core feed properties
 for label, prop, trunc in feed_properties:
