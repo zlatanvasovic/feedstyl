@@ -3,8 +3,8 @@
 **parser.py** is a script for displaying pretty RSS feeds. It uses
 [feedparser](http://code.google.com/p/feedparser/).
 
-There is just raw data. `&ge;`, `&le;`, `&amp` etc. are also in raw format,
-without parsing.
+There is just raw data. Special HTML symbols (like `&ge;`, `&le;`, `&amp` etc.)
+are also in raw format, without any parsing.
 
 Licensed under the terms of MIT license.
 
