@@ -1,10 +1,11 @@
 # parser.py
 
-**parser.py** is a script for displaying pretty RSS feeds. It uses
+**parser.py** is a script for displaying pretty RSS and Atom feeds. It uses
 [feedparser](http://code.google.com/p/feedparser/).
 
-There is just raw data. Special HTML symbols (like `&ge;`, `&le;`, `&amp` etc.)
-and HTML elements are also in raw format, without any parsing.
+For more info about parsing content, look at
+[sanitization](http://pythonhosted.org/feedparser/html-sanitization.html)
+article.
 
 Licensed under the terms of MIT license.
 

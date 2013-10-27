@@ -5,40 +5,28 @@
 # Script for displaying pretty RSS feeds
 #
 
-import sys
+from sys import argv
 import feedparser
 
-# List of tuples (label, property tag, truncation)
-# ------------------------------------------------
+# Feed data for parse
+data = feedparser.parse(argv[1])
 
-feed_properties = [
-  ("\n\033[1mFeed title:\033[0m", "title", None),
-  ("\033[1mFeed description:\033[0m", "description", 59),
-  ("\033[1mFeed URL:\033[0m", "link", None),
-]
+# Display core feed data
+print "\n\033[1mFeed title:\033[0m", data.feed.title
+if "description" in data.feed:
+  feed_d = data.feed.description
+  if len(feed_d) > 59:
+    feed_d = feed_d[:59] + "..."
+  print "\033[1mFeed description:\033[0m", feed_d
+print "\033[1mFeed URL:\033[0m", data.feed.link
 
-item_properties = [
-  ("\033[1mItem title:\033[0m", "title", None),
-  ("\033[1mItem description:\033[0m", "description", 55),
-  ("\033[1mItem URL:\033[0m", "link", None),
-]
-
-# Display feed data
-# -----------------
-
-# Display core feed properties
-for label, prop, trunc in feed_properties:
-  value = feedparser.parse(sys.argv[1]).feed[prop]
-  if trunc and len(value) > trunc:
-    value = value[:trunc] + "..."
-  print >> sys.stdout, label, value
-
-# Display core items properties
-print >> sys.stdout, "\n\033[1mFeed items:\033[0m\n"
-for item in feedparser.parse(sys.argv[1]).entries:
-  for label, prop, trunc in item_properties:
-    value = item[prop]
-    if trunc and len(value) > trunc:
-      value = value[:trunc] + "..."
-    print >> sys.stdout, " ", label, value
-  print ""
+# Display core items data
+print "\n\033[1mFeed items:\033[0m\n"
+for item in data.entries:
+  print "  \033[1mItem title:\033[0m", item.get("title", "")
+  if "description" in item:
+    item_d = item.get("description", "")
+    if len(item_d) > 55:
+      item_d = item_d[:55] + "..."
+    print "  \033[1mItem description:\033[0m", item_d
+  print "  \033[1mItem link:\033[0m", item.get("link", ""), "\n"
