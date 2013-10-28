@@ -23,10 +23,10 @@ print "\033[1mFeed URL:\033[0m", data.feed.link
 # Display core items data
 print "\n\033[1mFeed items:\033[0m\n"
 for item in data.entries:
-  print "  \033[1mItem title:\033[0m", item.get("title", "")
+  print "  \033[1mItem title:\033[0m", item.title
   if "description" in item:
-    item_d = item.get("description", "")
+    item_d = item.description
     if len(item_d) > 55:
       item_d = item_d[:55] + "..."
     print "  \033[1mItem description:\033[0m", item_d
-  print "  \033[1mItem link:\033[0m", item.get("link", ""), "\n"
+  print "  \033[1mItem link:\033[0m", item.link, "\n"
