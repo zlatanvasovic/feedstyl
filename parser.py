@@ -8,7 +8,7 @@
 from sys import argv
 import feedparser
 
-# Feed data for parse
+# Data for parse
 data = feedparser.parse(argv[1])
 
 # Display core feed data
