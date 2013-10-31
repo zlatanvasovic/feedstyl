@@ -7,7 +7,7 @@ For more info about parsing content, look at
 [sanitization](http://pythonhosted.org/feedparser/html-sanitization.html)
 article at feedparser documentation.
 
-Licensed under the terms of MIT license.
+Licensed under the MIT License.
 
 ## Usage
 
