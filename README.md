@@ -3,7 +3,7 @@
 **parser.py** is a script for displaying pretty RSS and Atom feeds. It uses
 [feedparser](http://code.google.com/p/feedparser/).
 
-For more info about parsing content, look at
+For more info about how the content will be parsed, look at
 [sanitization](http://pythonhosted.org/feedparser/html-sanitization.html)
 article at feedparser documentation.
 
