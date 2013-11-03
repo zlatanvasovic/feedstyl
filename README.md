@@ -4,8 +4,8 @@
 [feedparser](http://code.google.com/p/feedparser/).
 
 For more info about how the content will be parsed, look at
-[sanitization](http://pythonhosted.org/feedparser/html-sanitization.html)
-article at feedparser documentation.
+[this article](http://pythonhosted.org/feedparser/html-sanitization.html)
+at feedparser documentation.
 
 Licensed under the MIT License.
 
