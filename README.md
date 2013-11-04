@@ -15,7 +15,7 @@ Licensed under the MIT License.
 $ ./parser.py URL
 ```
 
-`URL` can start with `http://` or `https://`.
+`URL` must start with `http://` or `https://`.
 
 ## Author
 
