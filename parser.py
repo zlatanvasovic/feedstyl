@@ -27,4 +27,4 @@ for item in data.entries:
     if len(item.description) > 55:
       item.description = item.description[:55] + "..."
     print "  \033[1mItem description:\033[0m", item.description
-  print "  \033[1mItem link:\033[0m", item.link, "\n"
+  print "  \033[1mItem URL:\033[0m", item.link, "\n"
