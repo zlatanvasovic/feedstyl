@@ -21,10 +21,10 @@ print "\033[1mFeed link:\033[0m", data.feed.link
 
 # Display core items properties
 print "\n\033[1mFeed entries:\033[0m\n"
-for item in data.entries:
-  print "  \033[1mEntry title:\033[0m", item.title
-  if "description" in item:
-    if len(item.description) > 54:
-      item.description = item.description[:54] + "..."
-    print "  \033[1mEntry description:\033[0m", item.description
-  print "  \033[1mEntry link:\033[0m", item.link, "\n"
+for entry in data.entries:
+  print "  \033[1mEntry title:\033[0m", entry.title
+  if "description" in entry:
+    if len(entry.description) > 54:
+      entry.description = entry.description[:54] + "..."
+    print "  \033[1mEntry description:\033[0m", entry.description
+  print "  \033[1mEntry link:\033[0m", entry.link, "\n"
