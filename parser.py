@@ -8,6 +8,10 @@
 from sys import argv
 import feedparser
 
+# Fix weird links without `http`
+if not argv[1].startswith("http"):
+  argv[1] = "http://" + argv[1]
+
 # Data for parsing
 data = feedparser.parse(argv[1])
 
