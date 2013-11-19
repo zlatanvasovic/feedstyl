@@ -8,7 +8,12 @@
 from sys import argv
 import feedparser
 
-# Fix weird links without `http`
+# Check for incorrect usage
+if len(argv) == 1:
+  print "URL is missing."
+  quit()
+
+# Fix weird links without `http(s)`
 if not argv[1].startswith("http"):
   argv[1] = "http://" + argv[1]
 
