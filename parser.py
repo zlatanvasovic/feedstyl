@@ -17,7 +17,7 @@ if len(argv) == 1:
 if not argv[1].startswith("http"):
   argv[1] = "http://" + argv[1]
 
-# Data for parsing
+# Feed data
 data = feedparser.parse(argv[1])
 
 # Display core feed properties
