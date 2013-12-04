@@ -15,6 +15,13 @@ Licensed under the MIT License.
 $ ./parser.py URL
 ```
 
+## Configuration
+
+Configuration values:
+
+* `feed_trunc` (L24)
+* `entry_trunc` (L25)
+
 ## Author
 
 **Zlatan Vasović**
