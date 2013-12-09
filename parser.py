@@ -17,12 +17,12 @@ if len(argv) == 1:
 if not argv[1].startswith("http"):
   argv[1] = "http://" + argv[1]
 
+# Configuration
+feed_trunc = 59
+entry_trunc = 56
+
 # Feed data
 data = feedparser.parse(argv[1])
-
-# Truncation values
-feed_trunc = 59
-entry_trunc = 54
 
 # Display core feed properties
 print "\n\033[1mFeed title:\033[0m", data.feed.title

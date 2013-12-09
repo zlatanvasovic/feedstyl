@@ -19,8 +19,8 @@ $ ./parser.py URL
 
 Configuration values:
 
-* `feed_trunc` (L24)
-* `entry_trunc` (L25)
+* `feed_trunc`
+* `entry_trunc`
 
 ## Author
 
