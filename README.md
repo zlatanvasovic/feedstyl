@@ -1,7 +1,8 @@
 # parser.py
 
-**parser.py** is a script for displaying pretty feeds. It uses
-[feedparser](http://code.google.com/p/feedparser/).
+> Script for displaying pretty feeds
+
+Uses [feedparser](http://code.google.com/p/feedparser/).
 
 For more info about content parsing, read
 [this article](http://pythonhosted.org/feedparser/html-sanitization.html)
