@@ -1,6 +1,6 @@
 # parser.py
 
-**parser.py** is a script for displaying pretty RSS and Atom feeds. It uses
+**parser.py** is a script for displaying pretty feeds. It uses
 [feedparser](http://code.google.com/p/feedparser/).
 
 For more info about content parsing, read
@@ -19,6 +19,7 @@ $ ./parser.py URL
 
 Configuration values:
 
+* `indent_lenght`
 * `feed_trunc`
 * `entry_trunc`
 

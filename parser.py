@@ -2,42 +2,69 @@
 # -*- coding:utf-8 -*-
 
 #
-# Script for displaying pretty RSS feeds
+# Script for displaying pretty feeds
 #
 
 from sys import argv
 import feedparser
 
+#
+# Check for errors
+#
+
 # Check for incorrect usage
 if len(argv) == 1:
   print "URL is missing."
-  quit()
+  quit(1)
 
 # Fix weird links without `http`
-if not argv[1].startswith("http"):
+if not (argv[1].startswith("http://") or argv[1].startswith("https://")):
   argv[1] = "http://" + argv[1]
 
+#
 # Configuration
+#
+
+# Indent
+indent_lenght = 2
+indent = " " * indent_lenght
+
+# Truncation (depends on indent)
 feed_trunc = 59
 entry_trunc = 56
 
 # Feed data
 data = feedparser.parse(argv[1])
 
+#
+# Functions
+#
+
+# Bold decoration
+def bold(string):
+  return "\033[1m" + string + "\033[0m"
+
+# Truncation
+def trunc(trunc, string):
+  if len(string) > trunc:
+    string = string[:trunc] + "..."
+  return string
+
+#
+# Display data
+#
+
 # Display core feed properties
-print "\n\033[1mFeed title:\033[0m", data.feed.title
+print bold("\nFeed title:"), data.feed.title
 if "description" in data.feed:
-  if len(data.feed.description) > feed_trunc:
-    data.feed.description = data.feed.description[:feed_trunc] + "..."
-  print "\033[1mFeed description:\033[0m", data.feed.description
-print "\033[1mFeed link:\033[0m", data.feed.link
+  print bold("Feed description: ") + trunc(feed_trunc, data.feed.description)
+print bold("Feed link: ") + data.feed.link
 
 # Display core items properties
-print "\n\033[1mFeed entries:\033[0m\n"
+print bold("Feed entries:\n")
 for entry in data.entries:
-  print "  \033[1mEntry title:\033[0m", entry.title
+  print indent + bold("Entry title: ") + entry.title
   if "description" in entry:
-    if len(entry.description) > entry_trunc:
-      entry.description = entry.description[:entry_trunc] + "..."
-    print "  \033[1mEntry description:\033[0m", entry.description
-  print "  \033[1mEntry link:\033[0m", entry.link, "\n"
+    print indent + bold("Entry description: ") + \
+    trunc(entry_trunc, entry.description)
+  print indent + bold("Entry link: ") + entry.link, "\n"
