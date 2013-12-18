@@ -55,16 +55,16 @@ def trunc(trunc, string):
 #
 
 # Display core feed properties
-print bold("\nFeed title:"), data.feed.title
+print bold("\nFeed title: ") + data.feed.title
 if "description" in data.feed:
   print bold("Feed description: ") + trunc(feed_trunc, data.feed.description)
 print bold("Feed link: ") + data.feed.link
 
 # Display core items properties
-print bold("Feed entries:\n")
+print bold("\nFeed entries:\n")
 for entry in data.entries:
   print indent + bold("Entry title: ") + entry.title
   if "description" in entry:
     print indent + bold("Entry description: ") + \
     trunc(entry_trunc, entry.description)
-  print indent + bold("Entry link: ") + entry.link, "\n"
+  print indent + bold("Entry link: ") + entry.link + "\n"
