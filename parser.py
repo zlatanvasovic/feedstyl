@@ -14,16 +14,22 @@ import feedparser
 
 # Check for incorrect usage
 if len(argv) == 1:
-  print "URL is missing."
-  quit(1)
+  print "URL is missing.\n"
+  url = raw_input("Enter it: ")
+# Default case
+else:
+  url = argv[1]
 
 # Fix weird links without `http`
-if not (argv[1].startswith("http://") or argv[1].startswith("https://")):
-  argv[1] = "http://" + argv[1]
+if not (url.startswith("http://") or url.startswith("https://")):
+  url = "http://" + url
 
 #
 # Configuration
 #
+
+# Feed data
+data = feedparser.parse(url)
 
 # Indent
 indent_lenght = 2
@@ -32,9 +38,6 @@ indent = " " * indent_lenght
 # Truncation (depends on indent)
 feed_trunc = 59
 entry_trunc = 56
-
-# Feed data
-data = feedparser.parse(argv[1])
 
 #
 # Functions
