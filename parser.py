@@ -26,9 +26,6 @@ if not (url.startswith("http://") or url.startswith("https://")):
 # Configuration
 # -------------
 
-# Feed data
-data = feedparser.parse(url)
-
 # Indent
 indent_lenght = 2
 indent = " " * indent_lenght
@@ -52,6 +49,9 @@ def trunc(trunc, string):
 
 # Display data
 # ------------
+
+# Feed data
+data = feedparser.parse(url)
 
 # Display core feed properties
 print bold("\nFeed title: ") + data.feed.title
