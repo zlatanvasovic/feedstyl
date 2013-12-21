@@ -8,9 +8,8 @@
 from sys import argv
 import feedparser
 
-#
-# Check for errors
-#
+# Error checkers
+# --------------
 
 # Check for incorrect usage
 if len(argv) == 1:
@@ -24,9 +23,8 @@ else:
 if not (url.startswith("http://") or url.startswith("https://")):
   url = "http://" + url
 
-#
 # Configuration
-#
+# -------------
 
 # Feed data
 data = feedparser.parse(url)
@@ -39,9 +37,8 @@ indent = " " * indent_lenght
 feed_trunc = 59
 entry_trunc = 56
 
-#
 # Functions
-#
+# ---------
 
 # Bold decoration
 def bold(string):
@@ -53,9 +50,8 @@ def trunc(trunc, string):
     string = string[:trunc] + "..."
   return string
 
-#
 # Display data
-#
+# ------------
 
 # Display core feed properties
 print bold("\nFeed title: ") + data.feed.title
