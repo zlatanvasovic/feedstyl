@@ -23,10 +23,3 @@ Configuration values:
 * `indent_lenght`
 * `feed_trunc`
 * `entry_trunc`
-
-## Author
-
-**Zlatan Vasović**
-
-* <https://twitter.com/zdr0id>
-* <https://github.com/ZDroid>
