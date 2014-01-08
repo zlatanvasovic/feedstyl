@@ -8,8 +8,6 @@ For more info about content parsing, read
 [sanitization article](http://pythonhosted.org/feedparser/html-sanitization.html)
 at feedparser documentation.
 
-Licensed under the MIT License.
-
 ## Usage
 
 ```bash
@@ -23,3 +21,7 @@ Configuration values:
 * `indent_lenght`
 * `feed_trunc`
 * `entry_trunc`
+
+## License
+
+MIT &copy; [Zlatan Vasović](https://github.com/ZDroid)
