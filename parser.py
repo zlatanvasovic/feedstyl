@@ -8,7 +8,7 @@
 from sys import argv
 import feedparser
 
-# Error checkers
+# Error handlers
 # --------------
 
 # Check for incorrect usage
