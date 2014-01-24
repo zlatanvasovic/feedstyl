@@ -34,8 +34,8 @@ indent = " " * indent_lenght
 feed_trunc = 59
 entry_trunc = 56
 
-# Functions
-# ---------
+# Helper functions
+# ----------------
 
 # Bold decoration
 def bold(string):
@@ -54,16 +54,27 @@ def trunc(trunc, string):
 data = feedparser.parse(url)
 
 # Display core feed properties
-print bold("\nFeed title: ") + data.feed.title
-if "description" in data.feed:
-  print bold("Feed description: ") + trunc(feed_trunc, data.feed.description)
-print bold("Feed link: ") + data.feed.link
+def feedcore():
+  print bold("\nFeed title: ") + data.feed.title
+  if "description" in data.feed:
+    print bold("Feed description: ") + trunc(feed_trunc, data.feed.description)
+  print bold("Feed link: ") + data.feed.link
 
 # Display core items properties
-print bold("\nFeed entries:\n")
-for entry in data.entries:
-  print indent + bold("Entry title: ") + entry.title
-  if "description" in entry:
-    print indent + bold("Entry description: ") + \
-    trunc(entry_trunc, entry.description)
-  print indent + bold("Entry link: ") + entry.link + "\n"
+def entrycore():
+  print bold("\nFeed entries:\n")
+  for entry in data.entries:
+    print indent + bold("Entry title: ") + entry.title
+    if "description" in entry:
+      print indent + bold("Entry description: ") + \
+      trunc(entry_trunc, entry.description)
+    print indent + bold("Entry link: ") + entry.link + "\n"
+
+# Display them all
+def start():
+  feedcore()
+  entrycore()
+
+# Display data only when ran as main
+if __name__ == "__main__":
+  start()
