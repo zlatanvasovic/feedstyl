@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-# -*- coding:utf-8 -*-
+#!/usr/bin/env python3
 
 #
 # Script for displaying pretty feeds
@@ -13,8 +12,8 @@ import feedparser
 
 # Check for incorrect usage
 if len(argv) == 1:
-  print "URL is missing.\n"
-  url = raw_input("Enter it: ")
+  print("URL is missing.\n")
+  url = input("Enter it: ")
 # Default case
 else:
   url = argv[1]
@@ -55,20 +54,20 @@ data = feedparser.parse(url)
 
 # Display core feed properties
 def feedcore():
-  print bold("\nFeed title: ") + data.feed.title
+  print(bold("\nFeed title: ") + data.feed.title)
   if "description" in data.feed:
-    print bold("Feed description: ") + trunc(feed_trunc, data.feed.description)
-  print bold("Feed link: ") + data.feed.link
+    print(bold("Feed description: ") + trunc(feed_trunc, data.feed.description))
+  print(bold("Feed link: ") + data.feed.link)
 
 # Display core items properties
 def entrycore():
-  print bold("\nFeed entries:\n")
+  print(bold("\nFeed entries:\n"))
   for entry in data.entries:
-    print indent + bold("Entry title: ") + entry.title
+    print(indent + bold("Entry title: ") + entry.title)
     if "description" in entry:
-      print indent + bold("Entry description: ") + \
-      trunc(entry_trunc, entry.description)
-    print indent + bold("Entry link: ") + entry.link + "\n"
+      print(indent + bold("Entry description: ") + \
+            trunc(entry_trunc, entry.description))
+    print(indent + bold("Entry link: ") + entry.link + "\n")
 
 # Display them all
 def start():
