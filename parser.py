@@ -18,7 +18,7 @@ if len(argv) == 1:
 else:
   url = argv[1]
 
-# Fix weird links without `http`
+# Fix broken links without `http(s)://`
 if not (url.startswith("http://") or url.startswith("https://")):
   url = "http://" + url
 
