@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
 #
-# Script for displaying pretty feeds
+# Feed stylish (http://git.io/feed-stylish)
+# Licensed under the MIT License.
 #
 
 from sys import argv

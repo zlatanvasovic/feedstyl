@@ -1,6 +1,6 @@
-# parser.py
+# Feed stylish
 
-> Script for displaying pretty feeds
+> Script for displaying stylish feeds
 
 Uses [feedparser](http://code.google.com/p/feedparser/).
 
@@ -11,7 +11,7 @@ at feedparser documentation.
 ## Usage
 
 ```bash
-$ ./parser.py URL
+$ ./feed-stylish.py URL
 ```
 
 ## Configuration
