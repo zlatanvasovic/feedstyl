@@ -1,4 +1,4 @@
-# Feed stylish
+# Feedstyl
 
 > Script for displaying stylish feeds
 
@@ -11,7 +11,7 @@ at feedparser documentation.
 ## Usage
 
 ```bash
-$ ./feed-stylish.py URL
+$ ./feedstyl.py URL
 ```
 
 ## Configuration
