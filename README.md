@@ -18,9 +18,9 @@ $ ./feedstyl.py URL
 
 Configuration values:
 
-* `indent_lenght`
-* `feed_trunc`
-* `entry_trunc`
+- `indent_lenght`
+- `feed_trunc`
+- `entry_trunc`
 
 ## License
 
