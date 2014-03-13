@@ -2,11 +2,15 @@
 
 > Script for displaying stylish feeds
 
-Uses [feedparser](http://code.google.com/p/feedparser/).
+Feedstyl is a script for displaying stylish, minimalistic feeds.
 
 For more info about content parsing, read
 [sanitization article](http://pythonhosted.org/feedparser/html-sanitization.html)
 at feedparser documentation.
+
+## Dependencies
+
+- [feedparser](http://code.google.com/p/feedparser/)
 
 ## Command line
 
