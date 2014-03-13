@@ -53,15 +53,15 @@ def trunc(trunc, string):
 # Feed data
 data = feedparser.parse(url)
 
-# Display core feed properties
-def feedcore():
+# Display feed properties
+def feed():
   print(bold("\nFeed title: ") + data.feed.title)
   if "description" in data.feed:
     print(bold("Feed description: ") + trunc(feed_trunc, data.feed.description))
   print(bold("Feed link: ") + data.feed.link)
 
-# Display core items properties
-def entrycore():
+# Display entries properties
+def entries():
   print(bold("\nFeed entries:\n"))
   for entry in data.entries:
     print(indent + bold("Entry title: ") + entry.title)
@@ -71,10 +71,10 @@ def entrycore():
     print(indent + bold("Entry link: ") + entry.link + "\n")
 
 # Display them all
-def start():
-  feedcore()
-  entrycore()
+def run():
+  feed()
+  entries()
 
 # Display data only when ran as main
 if __name__ == "__main__":
-  start()
+  run()
