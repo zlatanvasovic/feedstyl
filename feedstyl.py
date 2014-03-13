@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 #
-# Feed stylish (http://git.io/feedstyl)
+# Feedstyl (http://git.io/feedstyl)
 # Licensed under the MIT License.
 #
 
