@@ -19,7 +19,7 @@ if len(argv) == 1:
 else:
   url = argv[1]
 
-# Fix broken links without `http(s)://`
+# Fix broken links without protocol
 if not (url.startswith("http://") or url.startswith("https://")):
   url = "http://" + url
 
