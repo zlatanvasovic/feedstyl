@@ -10,6 +10,7 @@ at feedparser documentation.
 
 ## Dependencies
 
+- Python 3
 - [feedparser](http://code.google.com/p/feedparser/)
 
 ## Command line
