@@ -19,6 +19,8 @@ at feedparser documentation.
 $ ./feedstyl.py URL
 ```
 
+You can alias is to `feedstyl` or something like that if you want nicer usage.
+
 ## API
 
 Feedstyl is meant to be used only in the command line as **distinct command**.
