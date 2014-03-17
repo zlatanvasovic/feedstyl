@@ -53,16 +53,18 @@ def trunc(trunc, string):
 # Feed data
 data = feedparser.parse(url)
 
+print()
+
 # Display feed properties
 def feed():
-  print(bold("\nFeed title: ") + data.feed.title)
+  print(bold("Feed title: ") + data.feed.title)
   if "description" in data.feed:
     print(bold("Feed description: ") + trunc(feed_trunc, data.feed.description))
-  print(bold("Feed link: ") + data.feed.link)
+  print(bold("Feed link: ") + data.feed.link + "\n")
 
 # Display entries properties
 def entries():
-  print(bold("\nFeed entries:\n"))
+  print(bold("Feed entries:\n"))
   for entry in data.entries:
     print(indent + bold("Entry title: ") + entry.title)
     if "description" in entry:
