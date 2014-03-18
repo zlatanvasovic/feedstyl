@@ -73,10 +73,10 @@ def entries():
     print(indent + bold("Entry link: ") + entry.link + "\n")
 
 # Display them all
-def run():
+def main():
   feed()
   entries()
 
 # Display data only when ran as main
 if __name__ == "__main__":
-  run()
+  main()

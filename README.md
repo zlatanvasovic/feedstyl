@@ -43,9 +43,9 @@ Displays feed properties.
 
 Displays entries properties.
 
-### .run()
+### .main()
 
-**Usage:** `feedparser.run()`
+**Usage:** `feedparser.main()`
 
 Displays both feed and entries properties.
 
