@@ -53,7 +53,7 @@ Displays both feed and entries properties.
 
 Configuration values:
 
-- `indent_lenght`
+- `indent_lenght` (used for calculating `indent`)
 - `feed_trunc`
 - `entry_trunc`
 
