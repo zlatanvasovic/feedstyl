@@ -19,7 +19,7 @@ at feedparser documentation.
 $ ./feedstyl.py URL
 ```
 
-You can alias is to `feedstyl` or something like that if you want nicer usage.
+You can alias is to `feedstyl` or something similarly if you want nicer usage.
 
 ## API
 
