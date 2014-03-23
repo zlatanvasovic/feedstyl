@@ -24,8 +24,7 @@ You can alias is to `feedstyl` or something similarly if you want nicer usage.
 ## API
 
 Feedstyl is meant to be used only in the command line as **distinct command**.
-However, you can import Feedstyl in the another script. You have to import it
-locally.
+However, you can import Feedstyl **locally** in the another script.
 
 ```py
 import feedstyl
