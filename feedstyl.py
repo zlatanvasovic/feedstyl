@@ -50,10 +50,10 @@ def trunc(trunc, string):
 # Display data
 # ------------
 
+print()
+
 # Feed data
 data = feedparser.parse(url)
-
-print()
 
 # Display feed properties
 def feed():
