@@ -72,11 +72,10 @@ def entries():
             trunc(entry_trunc, entry.description))
     print(indent + bold("Entry link: ") + entry.link + "\n")
 
-# Display them all
+# Display data only when ran as main
 def main():
   feed()
   entries()
 
-# Display data only when ran as main
 if __name__ == "__main__":
   main()
