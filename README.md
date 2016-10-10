@@ -11,7 +11,7 @@ at feedparser documentation.
 ## Dependencies
 
 - Python 3
-- [feedparser](http://code.google.com/p/feedparser/)
+- [feedparser](https://github.com/kurtmckee/feedparser)
 
 ## Command line
 
@@ -58,4 +58,4 @@ Configuration values:
 
 ## License
 
-MIT &copy; [Zlatan Vasović](https://github.com/ZDroid)
+MIT &copy; [Zlatan Vasović](https://github.com/zdroid)
